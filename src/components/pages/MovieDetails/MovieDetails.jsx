@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Rating from "react-rating";
 import NavbarMovies from "../../NavBarMovies";
@@ -16,6 +16,10 @@ function MovieDetails() {
     getMovie();
   }, []);
 
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   const getMovie = async () => {
     const response = await axios.get(
       `https://api.themoviedb.org/3/movie/${params.id}?api_key=5a33fe746771b8d7938b9a70363e31b4&language=en-US`
@@ -26,7 +30,6 @@ function MovieDetails() {
   console.log(movie);
   return (
     <div>
-      {window.scrollTo(0, 0)}
       <NavbarMovies />
       {/*  <div className="container">
         <div
