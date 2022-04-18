@@ -16,10 +16,6 @@ function MovieDetails() {
     getMovie();
   }, []);
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  });
-
   const getMovie = async () => {
     const response = await axios.get(
       `https://api.themoviedb.org/3/movie/${params.id}?api_key=5a33fe746771b8d7938b9a70363e31b4&language=en-US`
