@@ -44,7 +44,7 @@ function FilterbyTitle({ listofMovies, setListofMovies }) {
 
         <form className="text-center">
           <label htmlFor="title" className="visually-hidden">
-            Enter a title to load movies
+            insert a title to load the movies
           </label>
           <input
             className="mt-5 w-75"
