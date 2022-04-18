@@ -1,0 +1,195 @@
+body {
+  background-color: rgb(19, 27, 34);
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.header-row {
+  background-image: url("../../public/background-row.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  width: auto;
+  filter: blur(0.5px) brightness(0.85);
+}
+
+.bg-text {
+  background-color: rgba(0, 0, 0, 0.333);
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-movies {
+  height: 300px;
+  width: 280px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+@media only screen and (max-width: 900px) {
+  .home-movies {
+    width: 90%;
+    height: 40rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+  #home-carousel-poster {
+    width: 100vw;
+    height: 150vw;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .home-movies {
+    margin-left: 10px;
+    width: 90%;
+    height: 35rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+}
+.zoom {
+  border-radius: 5rem;
+  transition: transform 0.3s;
+}
+.zoom:hover {
+  transform: scale(1.1);
+  border: #000;
+ 
+}
+
+.nav-text-position {
+  position: absolute;
+  top: 2%;
+  color: white;
+}
+
+#hackFlix {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  color: rgba(184, 188, 190, 0.829);
+  text-decoration: none;
+}
+
+#dropdown-basic-button {
+  position: absolute;
+  top: 2%;
+  right: 10%;
+  color: rgba(184, 188, 190, 0.829);
+  text-decoration: none;
+}
+
+.nav-bg {
+  background-color: rgb(19, 27, 34);
+}
+
+.star-hover {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.on {
+  color: #000;
+}
+.off {
+  color: #ccc;
+}
+
+.loading {
+  background-image: url("https://i.pinimg.com/originals/a2/dc/96/a2dc9668f2cf170fe3efeb263128b0e7.gif");
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 50%;
+}
+
+.spin {
+  margin-top: 50%;
+  text-align: center;
+  width: 2rem;
+  color: white;
+  animation: rotation 4s infinite linear;
+  fill: white;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.home-carousel-poster {
+  width: 100vw;
+  height: 44vw;
+  object-fit: cover;
+}
+
+.nav-links {
+  font-size: small;
+}
+
+.MovieDetails-background {
+  background-size: contain;
+  width: 100%;
+  height: 50rem;
+  background-repeat: no-repeat;
+}
+
+.MovieDetails-details {
+  background: linear-gradient(
+    5deg,
+    rgba(19, 27, 34, 1) 27%,
+    rgba(19, 27, 34, 0.6279645647321428) 38%,
+    rgba(19, 27, 34, 0.38426708574054624) 51%,
+    rgba(19, 27, 34, 0) 63%
+  );
+}
+.MovieDetails-details-release {
+  width: 50%;
+}
+@media only screen and (max-width: 990px) {
+  .home-movies {
+    margin-left: 10px;
+    width: 90%;
+    height: 35rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+  .MovieDetails-background {
+    background-size: contain;
+    width: 100%;
+    height: 35rem;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .MovieDetails-background {
+    background-size: contain;
+    width: 100%;
+    height: 35rem;
+    background-repeat: no-repeat;
+  }
+}

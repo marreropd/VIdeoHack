@@ -1,0 +1,17 @@
+#movie-main-background{
+    width: 100vh ;
+    height: 60vh;  
+}
+/* #movie-details-image{
+    filter: blur(3px);
+} */
+
+
+
+#bg-movie-data{
+    border-radius: 0.5rem;
+    width: 95%;
+    position: relative;
+    bottom: 50px;
+    background-color: rgba(8, 7, 7, 0.809);
+}
