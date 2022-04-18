@@ -44,7 +44,7 @@ function App() {
           }
         />
         <Route
-          path="movie/:id"
+          path="/movie/:id"
           element={<MovieDetails />}
           selectedMovie={selectedMovie}
         />
