@@ -50,7 +50,7 @@ function FilterbyTitle({ listofMovies, setListofMovies }) {
             className="mt-5 w-75"
             value={title}
             id="title"
-            placeholder="Ingrese un título para cargar peliculas ..."
+            placeholder=" Insert a title to load the movies ..."
             type={"text"}
             onChange={(e) => {
               setTitle(e.target.value);
