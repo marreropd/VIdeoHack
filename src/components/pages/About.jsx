@@ -7,7 +7,7 @@ function About() {
       <NavbarMovies />
       <hr className="my-5" />
       <div>
-        <h2 className="text-secondary">ABOUT US</h2>
+        <h2 className="text-secondary">ABOUT</h2>
         <hr className="fw-bold d-1 text-white" />
       </div>
       <div className="row">

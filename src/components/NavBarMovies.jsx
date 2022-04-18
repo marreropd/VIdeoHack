@@ -38,7 +38,7 @@ function NavbarMovies() {
                     className="text-decoration-none text-white"
                     to="/filter/title"
                   >
-                    Filtrar by title
+                    Filter by title
                   </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
