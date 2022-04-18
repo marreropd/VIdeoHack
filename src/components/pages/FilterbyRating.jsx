@@ -51,7 +51,7 @@ function FilterbyRating({ listofMovies, setListofMovies }) {
           ¡Start looking for your favorite movies...!
         </h1>
         <div className="filt-star d-flex justify-content-center mt-5">
-          <p className="text-white">filter by rating:</p>{" "}
+          <p className="text-white">filter by rating: </p>{" "}
           <Rating
             emptySymbol="bi bi-star"
             fullSymbol="bi bi-star-fill"
