@@ -14,6 +14,8 @@ function MovieDetails() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+  }, []);
+  useEffect(() => {
     getMovie();
   }, []);
 
