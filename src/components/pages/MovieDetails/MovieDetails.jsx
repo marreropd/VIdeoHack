@@ -26,6 +26,7 @@ function MovieDetails() {
   console.log(movie);
   return (
     <div>
+      {window.scrollTo(0, 0)}
       <NavbarMovies />
       {/*  <div className="container">
         <div
