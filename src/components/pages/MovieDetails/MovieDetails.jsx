@@ -73,13 +73,13 @@ function MovieDetails() {
 
         <div id="bg-movie-data" className="align-items-start container ">
           <div className="d-flex flex-column align-items-center ">
-            <h1 className="text-white ">{movie.title}</h1>
+            <h1 className="text-white mt-1">{movie.title}</h1>
             <h2 className="text-white h4">({movie.original_title})</h2>
             <p className="text-white mt-4">
               Release date: {movie.release_date}
             </p>
             <p className="text-white d-block">{movie.overview}</p>
-            <span className="mb-5">
+            <span className="mb-3">
               {" "}
               <Rating
                 readonly
