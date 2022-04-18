@@ -48,10 +48,10 @@ function FilterbyRating({ listofMovies, setListofMovies }) {
       <NavbarMovies className="" />
       <div className="py-5">
         <h1 className="text-center text-white mt-5">
-          ¡Empieza a buscar tus peliculas favoritas...!
+          ¡Start looking for your favorite movies...!
         </h1>
         <div className="filt-star d-flex justify-content-center mt-5">
-          <p className="text-white">filtrar por rating:</p>{" "}
+          <p className="text-white">filter by rating:</p>{" "}
           <Rating
             emptySymbol="bi bi-star"
             fullSymbol="bi bi-star-fill"

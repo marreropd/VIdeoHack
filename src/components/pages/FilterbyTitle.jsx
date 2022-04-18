@@ -39,12 +39,12 @@ function FilterbyTitle({ listofMovies, setListofMovies }) {
       <NavbarMovies />
       <div className="mt-5 py-2">
         <h1 className="text-center text-white mt-5">
-          ¡Empieza a buscar tus peliculas favoritas...!
+          ¡Start looking for your favorite movies...!
         </h1>
 
         <form className="text-center">
           <label htmlFor="title" className="visually-hidden">
-            Ingrese un titulo para cargar peliculas
+            Enter a title to load movies
           </label>
           <input
             className="mt-5 w-75"
