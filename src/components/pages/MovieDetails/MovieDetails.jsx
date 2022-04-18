@@ -60,7 +60,7 @@ function MovieDetails() {
       </div> */}
 
       <div
-        className="h-100 w-100 container"
+        className=" container d-flex align-items-end"
         id="movie-details-image"
         style={{
           backgroundImage: `url(https://image.tmdb.org/t/p/w1280/${movie.backdrop_path})`,
@@ -69,12 +69,12 @@ function MovieDetails() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div
+        {/* <div
           id="movie-main-background"
           className="d-flex  align-items-center"
-        ></div>
+        ></div> */}
 
-        <div id="bg-movie-data" className="align-items-start container ">
+        <div id="bg-movie-data" className="container mb-5 ">
           <div className="d-flex flex-column align-items-center ">
             <h1 className="text-white mt-1">{movie.title}</h1>
             <h2 className="text-white h4">({movie.original_title})</h2>
