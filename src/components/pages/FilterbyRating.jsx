@@ -4,6 +4,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import Rating from "react-rating";
 import { Link } from "react-router-dom";
 import tmdbApiConfig from "../../tmdbApiConfig";
+import Movies from "../Movies";
 import NavbarMovies from "../NavBarMovies";
 
 function FilterbyRating({ listofMovies, setListofMovies }) {
@@ -74,28 +75,12 @@ function FilterbyRating({ listofMovies, setListofMovies }) {
           >
             {listofMovies &&
               listofMovies.map((movie) => (
-                <div
-                  className="col-lg-2 text-center"
-                  key={movie.id + Math.random()}
-                  variant="primary"
-                >
-                  {" "}
-                  <Link to={`/movie/${movie.id}`}>
-                    <div className="">
-                      {isLoading && (
-                        <div className="spin">
-                          <i class="fa-solid fa-spinner"></i>
-                        </div>
-                      )}
-                      <img
-                        onLoad={() => setIsLoading(false)}
-                        className="rounded zoom"
-                        height={300}
-                        width={200}
-                        src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                      />
-                    </div>
-                  </Link>
+                <div className="container">
+                  <Movies
+                    listofMovies={listofMovies}
+                    setListofMovies={setListofMovies}
+                    /* setSelectedMovie={setSelectedMovie} */
+                  />
                 </div>
               ))}
           </InfiniteScroll>

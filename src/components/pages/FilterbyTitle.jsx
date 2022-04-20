@@ -4,8 +4,8 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import tmdbApiConfig from "../../tmdbApiConfig";
 import { Link } from "react-router-dom";
 import NavbarMovies from "../NavBarMovies";
+import Movies from "../Movies";
 function FilterbyTitle({ listofMovies, setListofMovies }) {
-  const [isLoading, setIsLoading] = useState(true);
   const [apiPageNumber, setApiPageNumber] = useState(1);
   const [title, setTitle] = useState("");
 
@@ -67,32 +67,18 @@ function FilterbyTitle({ listofMovies, setListofMovies }) {
               loader={<h4>Loading...</h4>}
               className="row g-1"
             >
+              {" "}
+              */
               {listofMovies &&
                 listofMovies.map((movie) => (
-                  <div
-                    className="col-lg-2 text-center"
-                    variant="primary"
-                    key={movie.id + Math.random()}
-                  >
-                    <Link to={`/movie/${movie.id}`}>
-                      {" "}
-                      <div className="">
-                        {isLoading && (
-                          <div className="spin">
-                            <i className="fa-solid fa-spinner"></i>
-                          </div>
-                        )}
-                        <img
-                          onLoad={() => setIsLoading(false)}
-                          //alt={`${movie.name}`}
-                          className="rounded zoom"
-                          height={300}
-                          width={200}
-                          src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                        />
-                      </div>
-                    </Link>
-                  </div>
+                  <>
+                    <div className="container">
+                      <Movies
+                        listofMovies={listofMovies}
+                        setListofMovies={setListofMovies}
+                      />
+                    </div>
+                  </>
                 ))}
             </InfiniteScroll>
           </div>

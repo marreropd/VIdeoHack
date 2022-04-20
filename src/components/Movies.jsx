@@ -25,38 +25,46 @@ function Movies({ listofMovies, setListofMovies }) {
     setListofMovies((prev) => [...prev, ...response.data.results]);
   };
 
+  function handleOnLoad() {
+    setIsLoading(false);
+    console.log(isLoading);
+  }
+  console.log(isLoading);
   return (
     <div className="row ">
-      <InfiniteScroll
+      {/*   <InfiniteScroll
         dataLength={listofMovies.length}
         next={fetchMoreData}
         hasMore={true}
         loader={<h4>Loading...</h4>}
         className="row mt-1"
-      >
-        {listofMovies &&
-          listofMovies.map((movie) => (
-            <Link
-              key={movie.id + Math.random()}
-              className="col-lg-2  d-flex align-self-center p-3"
-              to={`/movie/${movie.id}`}
-            >
-              <div
-                className="align-self-center home-movies rounded zoom on-hover"
-                onLoad={() => setIsLoading(false)}
-                style={{
-                  backgroundImage: `url(https://image.tmdb.org/t/p/w500/${movie.poster_path})`,
-                }}
-              >
-                {/*  {isLoading && (
-                <div className="spin">
-                  <i className="fa-solid fa-spinner"></i>
+      > */}
+      {listofMovies &&
+        listofMovies.map((movie) =>
+          movie.poster_path ? (
+            <div className="col-lg  d-flex  mt-2 p-2  align-items-center justify-content-center">
+              <Link key={movie.id + Math.random()} to={`/movie/${movie.id}`}>
+                {isLoading && (
+                  <div className="d-flex aling-items-center">
+                    <div className="spin">
+                      <i className="fa-solid fa-spinner"></i>
+                    </div>
+                  </div>
+                )}
+
+                <div className="zoom on-hover col-movie">
+                  <img
+                    id="image-movie"
+                    onLoad={() => handleOnLoad()}
+                    src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                    height={350}
+                  />
                 </div>
-              )} */}
-              </div>
-            </Link>
-          ))}
-      </InfiniteScroll>
+              </Link>
+            </div>
+          ) : null
+        )}
+      {/*   </InfiniteScroll> */}
     </div>
   );
 }

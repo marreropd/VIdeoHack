@@ -32,37 +32,8 @@ li {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.home-movies {
-  height: 300px;
-  width: 280px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: center;
-}
-@media only screen and (max-width: 900px) {
-  .home-movies {
-    width: 90%;
-    height: 40rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-  }
-  #home-carousel-poster {
-    width: 100vw;
-    height: 150vw;
-    object-fit: cover;
-  }
-}
-@media only screen and (max-width: 990px) {
-  .home-movies {
-    margin-left: 10px;
-    width: 90%;
-    height: 35rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-  }
-}
+
+
 .zoom {
   border-radius: 5rem;
   transition: transform 0.3s;
@@ -169,14 +140,7 @@ li {
   width: 50%;
 }
 @media only screen and (max-width: 990px) {
-  .home-movies {
-    margin-left: 10px;
-    width: 90%;
-    height: 35rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-  }
+ 
   .MovieDetails-background {
     background-size: contain;
     width: 100%;
