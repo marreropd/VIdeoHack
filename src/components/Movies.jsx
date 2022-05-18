@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 function Movies({ listofMovies, setListofMovies }) {
   const [isLoading, setIsLoading] = useState(true);
   const [apiPageNumber, setApiPageNumber] = useState(1);
+
   useEffect(() => {
     getListofMovies(apiPageNumber);
   }, []);

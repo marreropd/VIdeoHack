@@ -30,35 +30,6 @@ function MovieDetails() {
   return (
     <div>
       <NavbarMovies />
-      {/*  <div className="container">
-        <div
-          className="MovieDetails-background mt-5 "
-          style={{
-            backgroundImage: `url(https://image.tmdb.org/t/p/w1280/${movie.backdrop_path})`,
-          }}
-        >
-          <div className=" MovieDetails-details align-items-start d-flex flex-column justify-content-end  h-100 w-100">
-            <h1 className="text-white ">{movie.title}</h1>
-            <h2 className="text-white h4">({movie.original_title})</h2>
-            <p className="text-white mt-4">
-              Release date: {movie.release_date}
-            </p>
-            <p className="text-white d-block">{movie.overview}</p>
-            <span className="">
-              {" "}
-              <Rating
-                readonly
-                emptySymbol="bi bi-star"
-                fullSymbol="bi bi-star-fill"
-                className="text-warning"
-                initialRating={movie.vote_average / 2}
-              />
-            </span>
-            <hr className="text-white" />
-          </div>
-        </div>
-      </div> */}
-
       <div
         className=" container d-flex align-items-end"
         id="movie-details-image"
@@ -69,11 +40,6 @@ function MovieDetails() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        {/* <div
-          id="movie-main-background"
-          className="d-flex  align-items-center"
-        ></div> */}
-
         <div id="bg-movie-data" className="container mb-5 ">
           <div className="d-flex flex-column align-items-center ">
             <h1 className="text-white mt-1">{movie.title}</h1>
