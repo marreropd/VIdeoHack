@@ -59,7 +59,7 @@ function About() {
             </div>
           </div>
           <span className="text-muted text-center mt-5">
-            VideoHack © Hack Academy | Pablo Marrero | 2022
+            VideoHack © Hack Academy | Pablo Marrero | 2022 April
           </span>
         </footer>
       </div>
