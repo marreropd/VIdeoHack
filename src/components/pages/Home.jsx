@@ -16,7 +16,6 @@ function Home({ listofMovies, setListofMovies, setSelectedMovie }) {
     const response = await axios.get(
       `https://api.themoviedb.org/3/movie/popular?api_key=5a33fe746771b8d7938b9a70363e31b4&language=en-US&page=1`
     );
-    console.log(response.data.results);
     setMovie(response.data.results);
   };
 
